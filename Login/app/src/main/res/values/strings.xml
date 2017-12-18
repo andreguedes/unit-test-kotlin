@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Login</string>
+
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    
+    <string name="msg_fields_are_invalid">Preencha corretamente os campos</string>
+    <string name="msg_invalid_email">E-mail é inválido</string>
+    <string name="msg_invalid_password">Senha é inválida</string>
+    <string name="msg_user_not_found">Usuário não encontrado</string>
+
+    <string name="btn_login">Login</string>
+
+    <string name="txt_status_logged">Você está logado</string>
+    <string name="txt_status_not_logged">Você está deslogado</string>
+
+</resources>
