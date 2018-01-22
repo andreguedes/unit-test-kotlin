@@ -5,10 +5,6 @@ package br.com.andreguedes.calculadorakotlin
  */
 class CalculatorPresenter(private val view: CalculatorContract.CalculatorView) : CalculatorContract.CalculatorPresenter {
 
-    override fun doCalculate(operation: Operation) {
-//        view.setResult()
-    }
-
     override fun doSum() {
         view.setResult(Calculator.sum(view.getNumber1(), view.getNumber2()))
     }

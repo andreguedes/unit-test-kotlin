@@ -16,7 +16,6 @@ interface CalculatorContract {
         fun doSubtract()
         fun doMultiply()
         fun doDivide()
-        fun doCalculate(operation: Operation)
     }
 
 }

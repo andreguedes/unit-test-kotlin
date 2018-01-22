@@ -14,7 +14,7 @@ class CalculatorActivity : AppCompatActivity(), CalculatorContract.CalculatorVie
 
         mPresenter = CalculatorPresenter(this)
 
-        btn_sum.setOnClickListener { mPresenter.doCalculate(Operation.SUM) }
+        btn_sum.setOnClickListener { mPresenter.doSum() }
         btn_subtract.setOnClickListener { mPresenter.doSubtract() }
         btn_multiply.setOnClickListener { mPresenter.doMultiply() }
         btn_divide.setOnClickListener { mPresenter.doDivide() }

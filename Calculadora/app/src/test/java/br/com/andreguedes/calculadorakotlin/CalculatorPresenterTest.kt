@@ -35,4 +35,34 @@ class CalculatorPresenterTest {
         verify(view).setResult(6.2)
     }
 
+    @Test
+    fun shouldReturnCorrectSubtract() {
+        `when`(view.getNumber1()).thenReturn(4.0)
+        `when`(view.getNumber2()).thenReturn(2.0)
+
+        presenter.doSubtract()
+
+        verify(view).setResult(2.0)
+    }
+
+    @Test
+    fun shouldReturnCorrectMultiply() {
+        `when`(view.getNumber1()).thenReturn(4.0)
+        `when`(view.getNumber2()).thenReturn(2.0)
+
+        presenter.doMultiply()
+
+        verify(view).setResult(8.0)
+    }
+
+    @Test
+    fun shouldReturnCorrectDivide() {
+        `when`(view.getNumber1()).thenReturn(6.0)
+        `when`(view.getNumber2()).thenReturn(2.0)
+
+        presenter.doDivide()
+
+        verify(view).setResult(3.0)
+    }
+
 }
